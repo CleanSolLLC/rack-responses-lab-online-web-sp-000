@@ -6,7 +6,7 @@ class Application
     resp = Rack::Response.new
     time = Time.now.to_i
 
-    resp.write "#{time}"
+    resp.write "#{time}\n"
 
     if time < 12
       resp.write "Good Morning!"
