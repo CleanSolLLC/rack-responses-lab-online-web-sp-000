@@ -6,9 +6,9 @@ class Application
     resp = Rack::Response.new
     t = Time.now
     hour =  t.strftime("%I").to_i
-
+    
     resp.write "#{hour}\n"
-
+    
     if hour < 12
       resp.write "Good Morning!"
     else
