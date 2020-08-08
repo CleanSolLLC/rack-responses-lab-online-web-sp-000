@@ -5,9 +5,7 @@ class Application
   def call(env)
     resp = Rack::Response.new
     t = Time.now
-    t.hour
-
-    resp.write "h%#{t.hour}\n"
+    resp.write "#{t.strftime("%I")}\n"
 
     if t.hour < 12
       resp.write "Good Morning!"
