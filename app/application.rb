@@ -7,7 +7,7 @@ class Application
     t = Time.now
     hour =  t.strftime("%H%M").to_i
 
-    resp.write "#{hour}\n"
+    #resp.write "#{hour}\n"
 
     if hour < 1200
       resp.write "Good Morning!"
