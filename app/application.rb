@@ -9,10 +9,10 @@ class Application
 
     resp.write "#{hour}\n"
 
-    if hour < 12
+    if hour < 1200
       resp.write "Good Morning!"
     elsif
-      hour >= 12
+      hour >= 1200
       resp.write "Good Afternoon!"
     end
     resp.finish
