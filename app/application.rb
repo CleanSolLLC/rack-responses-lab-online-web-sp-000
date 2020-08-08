@@ -5,7 +5,7 @@ class Application
   def call(env)
     resp = Rack::Response.new
     t = Time.now
-    hour =  t.strftime("%I").to_i
+    hour =  t.strftime("%H").to_i
 
     resp.write "#{hour}\n"
 
